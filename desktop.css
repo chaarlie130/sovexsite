@@ -1,0 +1,209 @@
+
+body {
+    background-color: #010101;
+    color: #ffffff;
+    margin: 0px;
+    font-family: sans-serif;
+}
+.desktop-container {
+    width: 100vw;
+    background-image: url("desktop-background.png");
+    background-size: auto; /* Scale the image to cover the entire container */
+    background-repeat: no-repeat;
+    height: 104vh;
+    background-position: center; /* Center the image */
+    padding: 0% 10%;
+    padding-top: 10vh;
+    -webkit-box-sizing: border-box; /* For webkit browsers */
+    -moz-box-sizing: border-box; /* For Firefox browsers */
+    display: flex;
+    box-sizing: border-box; /* Standard syntax */
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    inline-size: -webkit-fill-available;
+    justify-content: center;
+    align-items: center;
+}
+div#d-topbar {
+    display: flex;
+    width: max-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5vw;
+}
+
+div#d-tlte-txt {
+    font-size: 3vw;
+    font-weight: bold;
+    padding: 0vh 1vw 4vh 0px;
+}
+
+button#d-cons {
+    border: none;
+    outline: none;
+    color: white;
+    padding: .8vh 2vw;
+    background: rgb(128 128 128 / 50%);
+    border-radius: .7vw;
+    cursor: pointer;
+    font-size: 1vw;
+}
+
+#d-abt {
+    padding: .8vh 1vw;
+    border: none;
+    color: white;
+    border-radius: .7vw;
+    background: none;
+    color: #ffffff;
+    border: none;
+    font-size: 1vw;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+    box-shadow: inset 0 0 0 2px rgb(255 255 255);
+}
+
+div#d-maintxt {
+    padding: 5vw 40vw 0px 11vw;
+}
+
+div#d-what-we-do {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: -9vh;
+    margin-bottom: 10vh;
+}
+
+
+#d-what-we-do h1 {
+    font-weight: 100;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+div#d-wht-we-do-ex {
+    width: 18%;
+    font-size: .7vw;
+    margin: 13vh 5vw;
+}
+
+div#d-wht-we-do-ex h1 {
+    font-weight: 100;
+}
+
+
+h1#dfmslkfm {
+    padding-right: 3vw;
+}
+
+.d-tch-stack-ex-img {width: 17%;}
+
+div#d-tech-stack-ex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 20vw;
+    PADDING: 10VH 0PX;
+}
+
+.d-tch-stack-ex-txt h1 {
+    font-size: 20px;
+    margin: 0px;
+}
+
+.d-tch-stack-ex-txt {
+    width: 11vw;
+    padding: 0px 01vw;
+}
+
+.d-tch-stack-ex-txt p {
+    font-size: 17px;
+    margin: 0.8vh 0px;
+}
+
+
+.d-tch-stack-ex-img img {
+    width: -webkit-fill-available;
+}
+
+div#d-tech-stack {
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    PADDING: 0PX 20VW;
+    justify-content: center;
+    align-items: center;
+}
+#d-tech-stack h1 {font-weight: 100;}
+
+div#d-team {
+    width: -webkit-fill-available;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 0px 31vw;
+    justify-content: center;
+    margin-top: 20vh;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20vh;
+}
+
+div#d-team h1 {
+    font-weight: 100;
+}
+
+#d-team p {
+    font-size: 1vw;
+    margin: 5vh 0px 7vh 0px;
+}
+div#d-footer {
+    width: -webkit-fill-available;
+    background: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    padding: 0px 30vw;
+    flex-wrap: wrap;
+    align-content: center;
+    color: #4a4a4a;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.d-svx-lgo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}
+
+#d-footer p {
+    font-size: 1.2vw;
+}
+
+h6 {
+    text-align: center;
+    font-weight: 100;
+    padding: 1vh 0px 0vh 0px;
+}
+.d-svx-lgo path {
+    fill: #4a4a4a;
+    stroke: #4a4a4a;
+}
