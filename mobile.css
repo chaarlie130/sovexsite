@@ -225,3 +225,88 @@ div#m-wht-we-do-ex img {
     width: 85%;
     margin: 6vh 0px 1vh 0px;
 }
+<<<<<<< Updated upstream
+=======
+
+.onb-mobile-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    padding: 5vh 0px;
+    align-items: center;
+}
+
+div#m-onboarding-inner {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0px;
+}
+
+div#m-onboarding-tab {
+    width: 75vw;
+    height: 6.5vh;
+    background: #1a1a1a;
+    border-radius: 4vw;
+    margin: 1.5vh 1vw;
+    display: flex;
+    justify-content: center;
+    transition: opacity 0.5s ease-out;
+}
+
+div#m-onboarding-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5vh 8vw;
+}
+
+div#m-onboarding-text {
+    font-size: 5.5vw;
+}
+.m-inner-tab {
+    padding: 1vw 2.05vw;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+h1#m-inner-tab-txt {
+    font-size: 3.9vw;
+    margin: 0px;
+    height: fit-content;
+    font-weight: 100;
+}
+
+.m-inner-tab svg {
+    margin: 0px 3vw;
+    width: 8vw;
+    margin-left: 0px;
+    height: auto;
+}
+div#m-onboarding-tab:hover {
+    background: #313131;
+    cursor: pointer;
+}
+.onb-mobile-cont {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.onb-mobile-cont.show {
+    opacity: 1;
+}.hide {
+    opacity: 0;
+}
+>>>>>>> Stashed changes

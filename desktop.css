@@ -33,7 +33,8 @@ div#d-topbar {
     align-content: center;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 5vw;
+    padding: 0px 9vw;
+    width: -webkit-fill-available;
 }
 
 div#d-tlte-txt {
@@ -207,3 +208,85 @@ h6 {
     fill: #4a4a4a;
     stroke: #4a4a4a;
 }
+<<<<<<< Updated upstream
+=======
+.onb-dekstop-cont {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: center;
+    padding: 5vh 0px;
+    align-items: center;
+}
+
+div#d-onboarding-inner {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh 0px;
+}
+
+div#d-onboarding-tab {
+    width: 341px;
+    height: 73px;
+    background: #1a1a1a;
+    border-radius: 1vw;
+    margin: 1.5vh 1vw;
+    display: flex;
+    justify-content: center;
+    transition: opacity 0.5s ease-out;
+}
+
+div#d-onboarding-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 5vh 25vw;
+}
+
+div#d-onboarding-text {
+    font-size: 1.5vw;
+}
+.d-inner-tab {
+    padding: 1vw 2.05vw;
+    width: -webkit-fill-available;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+h1#d-inner-tab-txt {
+    font-size: 0.9vw;
+    margin: 0px;
+    height: fit-content;
+    font-weight: 100;
+}
+
+.d-inner-tab svg {
+    margin: 0px 0.6vw;
+    margin-left: 0px;
+}
+div#d-onboarding-tab:hover {
+    background: #313131;
+    cursor: pointer;
+}
+.onb-dekstop-cont {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.onb-dekstop-cont.show {
+    opacity: 1;
+}.hide {
+    opacity: 0;
+}
+>>>>>>> Stashed changes
