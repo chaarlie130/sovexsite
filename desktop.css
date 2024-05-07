@@ -208,8 +208,6 @@ h6 {
     fill: #4a4a4a;
     stroke: #4a4a4a;
 }
-<<<<<<< Updated upstream
-=======
 .onb-dekstop-cont {
     display: flex;
     flex-direction: row;
@@ -289,4 +287,3 @@ div#d-onboarding-tab:hover {
 }.hide {
     opacity: 0;
 }
->>>>>>> Stashed changes
