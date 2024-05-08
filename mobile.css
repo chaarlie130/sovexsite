@@ -232,12 +232,13 @@ div#m-wht-we-do-ex img {
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: center;
-    padding: 5vh 0px;
+    padding: 2vh 0px;
+    padding-bottom: 0px;
     align-items: center;
 }
 
 div#m-onboarding-inner {
-    width: 100vw;
+    width: min-content;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -306,4 +307,35 @@ div#m-onboarding-tab:hover {
     opacity: 1;
 }.hide {
     opacity: 0;
+}
+div#m-onboarding-nxt-title {
+    font-size: 5vw;
+    font-weight: 500;
+}
+
+#m-onboarding-nxt-inp h6 {font-size: 4vw;text-align: justify;margin: 3vh 0px;}
+
+#m-onboarding-nxt-inp input {
+    font-size: 3vw;
+    padding: 2vw 3vw;
+    border-radius: 2vw;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: 0.2vh solid #373737;
+}
+
+
+div#m-onboarding-nxt-submit {
+    padding: 2vw 3vw;
+    outline: 0.2vh solid #373737;
+    background: #010101;
+    border-radius: 2vw;
+    font-size: 4vw;
+    text-align: center;
+    margin: 5vh 0px;
+}
+
+.nodisplay {
+    display: none;
 }

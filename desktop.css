@@ -287,3 +287,34 @@ div#d-onboarding-tab:hover {
 }.hide {
     opacity: 0;
 }
+div#d-onboarding-nxt-title {
+    font-size: 1.3vw;
+    font-weight: 500;
+}
+
+#d-onboarding-nxt-inp h6 {font-size: 1vw;color: #dbdbdb;text-align: justify;margin: 3vh 0px;}
+
+#d-onboarding-nxt-inp input {
+    font-size: 1vw;
+    padding: 1vw 3vw;
+    border-radius: 1vw;
+    color: white;
+    background: transparent;
+    border: none;
+    outline: 0.2vh solid #373737;
+}
+
+
+div#d-onboarding-nxt-submit {
+    padding: 1vw 3vw;
+    outline: 0.2vh solid #373737;
+    background: #010101;
+    border-radius: 1vw;
+    font-size: 1vw;
+    text-align: center;
+    margin: 5vh 0px;
+}
+
+.nodisplay {
+    display: none;
+}
