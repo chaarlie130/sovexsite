@@ -20,19 +20,19 @@ if (window.outerWidth >= 1200) {
     <div id="d-onboarding-nxt-inputs">
         <div id="d-onboarding-nxt-inp">
             <h6>Name</h6>
-            <input name="name" type="text" required pattern="[a-zA-Z ]+" title="Please enter your name" />
+            <input id="0-nme" name="name" type="text" required pattern="[a-zA-Z ]+" title="Please enter your name" />
         </div>
         <div id="d-onboarding-nxt-inp">
             <h6>Phone Number</h6>
-            <input name="phone" type="tel" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Please enter your phone number in the format XXX XXX XXXX" />
+            <input  id="0-tel" name="phone" type="tel" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Please enter your phone number in the format XXX XXX XXXX" />
         </div>
         <div id="d-onboarding-nxt-inp">
             <h6>Email</h6>
-            <input name="email" type="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter your email address in the format example@example.com" />
+            <input  id="0-email" name="email" type="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter your email address in the format example@example.com" />
         </div>
-        <div id="d-onboarding-nxt-submit" onclick="submitData('d')">Submit</div>
+            <div id="d-onboarding-nxt-submit" onclick="submitData('d')">Submit</div>
+        </div>
     </div>
-</div>
 
             <div id="d-onboarding-text">What Are You Looking For?</div>
             <div id="d-onboarding-content">
@@ -178,15 +178,15 @@ else if (window.outerWidth > 750 && window.outerWidth < 1199) {
     <div id="d-onboarding-nxt-inputs">
         <div id="d-onboarding-nxt-inp">
             <h6>Name</h6>
-            <input name="name" type="text" required pattern="[a-zA-Z ]+" title="Please enter your name" />
+            <input id="0-nme"  name="name" type="text" required pattern="[a-zA-Z ]+" title="Please enter your name" />
         </div>
         <div id="d-onboarding-nxt-inp">
             <h6>Phone Number</h6>
-            <input name="phone" type="tel" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Please enter your phone number in the format XXX XXX XXXX" />
+            <input  id="0-tel" name="phone" type="tel" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Please enter your phone number in the format XXX XXX XXXX" />
         </div>
         <div id="d-onboarding-nxt-inp">
             <h6>Email</h6>
-            <input name="email" type="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter your email address in the format example@example.com" />
+            <input  id="0-email" name="email" type="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter your email address in the format example@example.com" />
         </div>
         <div id="d-onboarding-nxt-submit" onclick="submitData('d')">Submit</div>
     </div>
@@ -328,15 +328,15 @@ else if (window.outerWidth > 0 && window.outerWidth < 749) {
     <div id="m-onboarding-nxt-inputs">
         <div id="m-onboarding-nxt-inp">
             <h6>Name</h6>
-            <input name="name" type="text" required pattern="[a-zA-Z ]+" title="Please enter your name" />
+            <input  id="0-nme" name="name" type="text" required pattern="[a-zA-Z ]+" title="Please enter your name" />
         </div>
         <div id="m-onboarding-nxt-inp">
             <h6>Phone Number</h6>
-            <input name="phone" type="tel" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Please enter your phone number in the format XXX XXX XXXX" />
+            <input  id="0-tel" name="tel" type="tel" required pattern="[0-9]{3} [0-9]{3} [0-9]{4}" title="Please enter your phone number in the format XXX XXX XXXX" />
         </div>
         <div id="m-onboarding-nxt-inp">
             <h6>Email</h6>
-            <input name="email" type="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter your email address in the format example@example.com" />
+            <input  id="0-email" name="email" type="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter your email address in the format example@example.com" />
         </div>
         <div id="m-onboarding-nxt-submit" onclick="submitData('m')">Submit</div>
     </div>
@@ -470,19 +470,19 @@ requestAnimationFrame(() => {
 function nextpge(number) {
     let serviceChosen;
     if (number == 0) {
-        serviceChosen = 'All';
+        serviceChosen = 'Interested in: All Services';
     }
     else if (number == 1) {
-        serviceChosen = 'Web Development';
+        serviceChosen = 'Interested in: Web Development';
     }
     else if (number == 2) {
-        serviceChosen = 'Search Optimization';
+        serviceChosen = 'Interested in: Search Optimization';
     }
     else if (number == 3) {
-        serviceChosen = 'Automated Bookings';
+        serviceChosen = 'Interested in: Automated Bookings';
     }
     else if (number == 4) {
-        serviceChosen = 'Other';
+        serviceChosen = 'Interested in: Other';
     }
     localStorage.setItem('srvce_chose', serviceChosen);
     if (window.outerWidth > 0 && window.outerWidth < 749) {
@@ -517,18 +517,16 @@ function submitData(sizeT) {
 function grabData(dev) {
     let nameCard, phoneCard;
 
-    if (dev === 'm') {
-        nameCard = document.getElementById('REPLACE').value;
-        phoneCard = document.getElementById('REPLACE').value;
-    } else if (dev === 'd') {
-        nameCard = document.getElementById('REPLACE').value;
-        phoneCard = document.getElementById('REPLACE').value;
-    }
+    console.log(dev);
+    nameCard = document.getElementById('0-nme').value;
+    phoneCard = document.getElementById('0-tel').value;
+    emailCard = document.getElementById('0-email').value;
     // Create an object to store the grabbed data
     var rawData = {
         name: nameCard,
         phone: phoneCard,
-        email: emailCard
+        email: emailCard,
+        description: localStorage.getItem('srvce_chose')
     };
 
     // Convert the object to JSON
