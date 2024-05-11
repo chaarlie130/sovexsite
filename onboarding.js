@@ -1,4 +1,4 @@
-if (window.outerWidth >= 1200) {
+if (screen.width >= 1200) {
   
     // Set the innerHTML of the div element to the desired HTML
     var desktopDOM = `
@@ -158,7 +158,7 @@ if (window.outerWidth >= 1200) {
         }
     });
 }
-else if (window.outerWidth > 750 && window.outerWidth < 1199) {
+else if (screen.width > 750 && screen.width < 1199) {
     document.body.innerHTML = `
     <div class="onb-dekstop-cont">
         <div id="d-topbar">
@@ -308,7 +308,7 @@ else if (window.outerWidth > 750 && window.outerWidth < 1199) {
     </div>
     `;
 }
-else if (window.outerWidth > 0 && window.outerWidth < 749) {
+else if (screen.width > 0 && screen.width < 749) {
     document.body.innerHTML = `    
     <div class="onb-mobile-cont">
     <div id="m-topbar">
@@ -485,10 +485,10 @@ function nextpge(number) {
         serviceChosen = 'Interested in: Other';
     }
     localStorage.setItem('srvce_chose', serviceChosen);
-    if (window.outerWidth > 0 && window.outerWidth < 749) {
+    if (screen.width > 0 && screen.width < 749) {
         changeOnboarding('m');
     }
-    else if (window.outerWidth >= 749) {
+    else if (screen.width >= 749) {
         changeOnboarding('d');
     }
 }
@@ -555,4 +555,23 @@ function sendData(rawUserData) {
     .catch(error => {
         console.error('Error:', error); // Handle errors
     });
+    clearForm();
+}
+function clearForm() {
+    var mOnboardingInner = document.getElementById("m-onboarding-inner");
+    var dOnboardingInner = document.getElementById("d-onboarding-inner");
+    var tOnboardingInner = document.getElementById("t-onboarding-inner");
+
+    if (mOnboardingInner) {
+        mOnboardingInner.innerHTML = "<p style='font-size: 6vw; width: 65vw; text-align: center;'>We will be in touch! Thank you for choosing Sovex.</p>";
+    }
+
+    if (dOnboardingInner) {
+        dOnboardingInner.innerHTML = "<p style='font-size: 1.5vw; width: 30vw; margin: 0px 20vw; text-align: center; '>We will be in touch! Thank you for choosing Sovex.</p>";
+        document.getElementById("d-footer").style.position = "fixed";
+    }
+
+    if (tOnboardingInner) {
+        tOnboardingInner.innerHTML = "<p style='font-size: 1.5vw; width: 30vw; margin: 0px 20vw; text-align: center; '>We will be in touch! Thank you for choosing Sovex.</p>";
+    }
 }

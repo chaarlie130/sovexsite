@@ -185,6 +185,7 @@ div#d-footer {
     color: #4a4a4a;
     justify-content: space-around;
     align-items: center;
+    bottom: -20vh;
 }
 
 .d-svx-lgo {
@@ -216,6 +217,7 @@ h6 {
     justify-content: center;
     padding: 5vh 0px;
     align-items: center;
+    padding-bottom: 0px;
 }
 
 div#d-onboarding-inner {
@@ -290,6 +292,7 @@ div#d-onboarding-tab:hover {
 div#d-onboarding-nxt-title {
     font-size: 1.3vw;
     font-weight: 500;
+    text-align: center;
 }
 
 #d-onboarding-nxt-inp h6 {font-size: 1vw;color: #dbdbdb;text-align: justify;margin: 3vh 0px;}
